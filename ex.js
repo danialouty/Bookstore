@@ -79,6 +79,17 @@ else{
 
 
 
+let num3 = prompt("Enter first number"); 
+let num4 = prompt("Enter second number"); 
+let sum1 = num3 + num4; 
+alert(sum1);//for example num3 =5  num4 =2 // sum2 = 52
 
 
+let num5 =Number( prompt("Enter first number")); 
+let num6 = Number(prompt("Enter second number")); 
+let sum2 = num3 + num4; 
+alert(sum2);//for example num5 =5  num6 =2 // sum2 = 7
+
+
+////////////////////////////////////////////////////////////////
 
