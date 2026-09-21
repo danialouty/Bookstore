@@ -23,7 +23,7 @@ let functional =prompt("do you prefer a fiction or non-fiction book genre");
 let titelbook = prompt("please enter your book title:");
 
 
-alert("your requested book" +titelbook+"is being reserved");
+alert("your requested book" +" " +titelbook+ " "+"is being reserved");
 
 console.log("dear "+username+" you ordered " + titelbook);
 
