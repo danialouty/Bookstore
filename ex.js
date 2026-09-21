@@ -35,7 +35,47 @@ console.log( 1 === '1' );
 
 
 
+////////////////////////////////////////////
+let readnum = prompt("please enter a num");
 
+
+alert("the num is "+" "+ readnum);
+
+
+////////////////////////////////////////
+
+let num1 = Number(prompt("enter the first number pls"));
+let num2 = Number(prompt("enter the second number pls"));
+
+
+if (num1<= num2){
+    alert("Numbers in ascending order: " + num1 + ", " + num2);
+
+}
+else{
+    alert("Numbers in ascending order: " + num2 + ", " + num1);
+}
+
+////////////////////////////////////////////////////////////
+
+
+let number1 = Number(prompt("Enter the first number:"));
+let number2 = Number(prompt(" Enter the second number:"));
+
+if (num1>num2){
+    alert("the largest num is: " + num1 );
+}
+else if(num1< num2){
+    alert("the largest num is: " + num2 );
+
+}
+else{
+    alert("both numbers are equal: "  );
+}
+
+
+
+/////////////////////////////////////////////////////////////
 
 
 
