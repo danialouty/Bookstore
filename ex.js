@@ -19,6 +19,7 @@ console.log( typeof("Water") );
 console.log( typeof(false) );
 console.log( typeof(9 != 11) );
 console.log( "Orang" + "e" );
+console.log( "Orange" - "s" );
 console.log( "4" + "8" );
 console.log( "4" - "8" );
 console.log(  "name" + 3 );
