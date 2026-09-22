@@ -10,7 +10,7 @@ console.log( Math.ceil(x) - Math.floor(x)  );
 
 
 
-/////////////////////////////////////////
+// /////////////////////////////////////////
 
 console.log( typeof(100) );
 console.log( typeof(73.9) );
@@ -42,7 +42,7 @@ let readnum = prompt("please enter a num");
 alert("the num is "+" "+ readnum);
 
 
-////////////////////////////////////////
+// ////////////////////////////////////////
 
 let num1 = Number(prompt("enter the first number pls"));
 let num2 = Number(prompt("enter the second number pls"));
@@ -56,17 +56,17 @@ else{
     alert("Numbers in ascending order: " + num2 + ", " + num1);
 }
 
-////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////
 
 
 let number1 = Number(prompt("Enter the first number:"));
 let number2 = Number(prompt(" Enter the second number:"));
 
-if (num1>num2){
-    alert("the largest num is: " + num1 );
+if (number1>number2){
+    alert("the largest num is: " + number1 );
 }
-else if(num1< num2){
-    alert("the largest num is: " + num2 );
+else if(number1< number2){
+    alert("the largest num is: " + number2 );
 
 }
 else{
@@ -75,7 +75,7 @@ else{
 
 
 
-/////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////
 
 
 
@@ -85,11 +85,60 @@ let sum1 = num3 + num4;
 alert(sum1);//for example num3 =5  num4 =2 // sum2 = 52
 
 
-let num5 =Number( prompt("Enter first number")); 
+let num5 = Number( prompt("Enter first number")); 
 let num6 = Number(prompt("Enter second number")); 
-let sum2 = num3 + num4; 
+let sum2 = num5 + num6; 
 alert(sum2);//for example num5 =5  num6 =2 // sum2 = 7
 
 
-////////////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////////////
+
+let num = 5;
+
+if(num =1){
+    console.log("ONE");
+}
+else if ( num=2){
+    console.log("TWO");
+}
+
+else if ( num=3){
+    console.log("THREE");
+}
+
+else if ( num=4){
+    console.log("FOUR");
+}
+
+else if ( num=5){
+    console.log("FIVE");
+}
+
+else if ( num=6){
+    console.log("SIX");
+}
+
+
+else if ( num=7){
+    console.log("SEVEN");
+}
+
+
+else if ( num=8){
+    console.log("EIGHT");
+}
+
+
+else if ( num=9){
+    console.log("NINE");
+}
+
+else {
+    console.log(" PLEASE TRY AGAIN ");
+}
+
+/////////////////////////////////////////////////////
+
+
+
 
