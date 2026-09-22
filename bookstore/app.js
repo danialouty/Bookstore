@@ -6,19 +6,32 @@ let membershipType = membership.toLowerCase();
 
 let type = "";
 
-if (membershipType === "student"){
-    type = "Student";
-} 
-else if(membershipType === "regular"){
-    type = "regular";  
-}     
+
+function membershiphandler(membershipType){
+while(membershipType !== "student" && membershipType !== "regular" ){
+
+  membershipType =prompt("please enter your membership type ");
+
+}
+}
+
+
+function arraydatasaver(data){
+const data= [4];
+data[0]=username;
+data[1]= membershipType;
+data [2]= bookGenre;
+data [3]= titelbook;
+
+}
 
 
 
 
-alert ("Hello " + username + " you are a " + type + " member.");
 
-let functional =prompt("do you prefer a fiction or non-fiction book genre");
+alert ("Hello " + username + " you are a " + membershipType + " member.");
+
+let bookGenre =prompt("do you prefer a fiction or non-fiction book genre");
 
 let titelbook = prompt("please enter your book title:");
 
