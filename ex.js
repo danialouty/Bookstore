@@ -139,38 +139,49 @@ else {
 
 /////////////////////////////////////////////////////
 
+let birthyear = prompt("enter ur year of birth :");
 
-function calArea(width,hight){
-    let area = width*hight;
-    return area;
 
+let age = 2026 - birthYear;
+
+
+
+if (age >= 18 && age <= 30) {
+    message = "You are eligible. Start your application.";
+} 
+
+else if (age > 30) {
+    message = "You are not eligible. You may join other programs.";
+}
+
+else if (age > 60) {
+    message = "You may join the seniors' program.";
+}
+
+else {
+    message = "You may join the kids' program.";
+}
+
+
+//////////////////////////////////////////////////
+
+let input = prompt();
+let result ="";
+
+for(let char of input)
+{
+ if(char=== char.toUpperCase()){
+    result+=char.toLocaleLowerCase();
+
+ }
+
+else{
+    result += char.toUpperCase();
 
 }
 
-let roomArea = calArea(5,4);
-console.log("the area is"+ roomArea);
-
-function cheekage(age){
-
-    if (age>18){
-        console.log("welcom to orange");
-
-    }
-
-    else{
-        console.log("sorry! you cant join :)");
-    }
-
 }
 
-console.log(cheekage(29));
-
-
-
-
-
-
-
-
-
-
+/////////////////////////////////////////
+let text = "Coding Academy by Orange";
+let result2 = '';
