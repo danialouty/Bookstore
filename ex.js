@@ -140,5 +140,37 @@ else {
 /////////////////////////////////////////////////////
 
 
+function calArea(width,hight){
+    let area = width*hight;
+    return area;
+
+
+}
+
+let roomArea = calArea(5,4);
+console.log("the area is"+ roomArea);
+
+function cheekage(age){
+
+    if (age>18){
+        console.log("welcom to orange");
+
+    }
+
+    else{
+        console.log("sorry! you cant join :)");
+    }
+
+}
+
+console.log(cheekage(29));
+
+
+
+
+
+
+
+
 
 
