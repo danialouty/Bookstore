@@ -25,7 +25,7 @@ data [3]= titelbook;
 
 }
 
-for (let i=0 ; i<dta.linght ; i++ ){
+for (let i=0 ; i<data.length() ; i++ ){
     console.log(data[i]);
 }
 
