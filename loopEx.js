@@ -73,3 +73,22 @@ for (let i=0 ; i<= num3 ;i++ ){
 }
 
 alert(sum);
+
+//////////////////////////////////////////////////
+
+
+
+
+let num4=prompt("please enter a number:");
+let avg=0;
+num4=Number(num4);
+
+for (let i=0 ; i<= num4 ;i++ ){
+
+
+    avg+=i;
+
+}
+avg=avg/(num4+1);
+
+alert(avg);
