@@ -54,6 +54,37 @@ event.preventDefault();
 
 if (membershipfield == "student" || membershipfield == "regular" ){
     
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+let confirmPassword = document.getElementById("confirmPassword");
+
+let usernameError = document.getElementById("usernameError");
+let passwordError = document.getElementById("passwordError");
+let confirmPasswordError = document.getElementById("confirmPasswordError");
+
+let form = document.getElementById("registerForm");
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    usernameError.textContent = "";
+    passwordError.textContent = "";
+    confirmPasswordError.textContent = "";
+
+    if (username.value.trim() === "") {
+        usernameError.textContent = "Username is required!";
+    }
+
+    if (password.value.trim() === "") {
+        passwordError.textContent = "Password is required!";
+    }
+
+    if (confirmPassword.value.trim() === "") {
+        confirmPasswordError.textContent = "Confirm Password is required!";
+    }
+
+});
 
 }
 
@@ -78,7 +109,71 @@ function renderUsers (){
 
         
     });
+}
 
 
+
+
+
+
+
+if (
+    password.value !== "" &&
+    confirmPassword.value !== "" &&
+    password.value !== confirmPassword.value
+) {
+    confirmPasswordError.textContent = "Passwords do not match!";
+}
+
+
+
+
+
+
+
+
+let registerButton = document.getElementById("registerButton");
+
+function validateForm() {
+
+    if (
+        username.value.trim() !== "" &&
+        password.value.trim() !== "" &&
+        confirmPassword.value.trim() !== "" &&
+        password.value === confirmPassword.value
+    ) {
+        registerButton.disabled = false;
+    } else {
+        registerButton.disabled = true;
+    }
 
 }
+
+username.addEventListener("input", validateForm);
+password.addEventListener("input", validateForm);
+confirmPassword.addEventListener("input", validateForm);
+
+
+
+
+
+let successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    successMessage.textContent = "Registration successful!";
+
+});
+
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    successMessage.textContent = "Registration successful!";
+
+});
+
+
